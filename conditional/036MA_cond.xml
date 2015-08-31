@@ -1,0 +1,3 @@
+<conditional display_name="Wait" attempted="True" message="This item hidden until you agree to the terms" sources="i4x://CollabAssess/CA101/problem/AgreeToCollab">
+<problem url_name="036MA"/>
+</conditional>

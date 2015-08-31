@@ -1,0 +1,10 @@
+<problem display_name="Completion code" markdown="null" max_attempts="0" rerandomize="per_student" weight="0.0">
+  <text>
+    <script type="loncapa/python">
+x1 = random.randint(10000, 99999)
+
+</script>
+    <p>Your completion code is: \($x1\). Please enter the number at AMT. Thanks!</p>
+    <p> </p>
+  </text>
+</problem>

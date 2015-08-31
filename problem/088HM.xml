@@ -1,0 +1,30 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>A rectangular pool 24 feet long, 8 feet wide, and 4 feet deep is filled with water. Water is leaking from the pool at the rate of 0.40 cubic feet per minute. At this rate, how many <u>hours</u> will it take for the water level to drop 1 foot?</p>
+  <p>
+    <p style="display:inline">  </p>
+    <numericalresponse inline="1" answer="8">
+      <textline inline="1">
+        <responseparam type="tolerance" default="0%"/>
+      </textline>
+		<hintgroup hintfn="hintfn1"/> 
+     </numericalresponse>
+    <p style="display:inline"></p>
+  </p>
+</problem>

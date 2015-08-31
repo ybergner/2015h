@@ -1,0 +1,42 @@
+<problem display_name="Multiple Choice" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>
+    <center>
+      <img src="/static/2530.JPG"/>
+    </center>
+  </p>
+  <p>If <i>x</i> and <i>y</i> are integers, then the expression <i>4x + 5y</i> has a value that is odd or even depending on the values of <i>x</i> and <i>y</i>. For example, if <i>x</i> and <i>y</i> are each even, <i>4x</i> is even and <i>5y</i> is even. Therefore, <i>4x + 5y</i> is also even. </p>
+  <p> For each of the blank rows in the table, indicate whether the value of <i>4x + 5y</i> is odd or even. </p>
+  <p>Second row:</p>
+  <optionresponse>
+    <optioninput label="For second row:" options="('Odd','Even','')" correct="Odd"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </optionresponse>
+  <p>Third row:</p>
+  <optionresponse>
+    <optioninput label="For third row:" options="('Odd','Even','')" correct="Even"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </optionresponse>
+  <p>Fourth row:</p>
+  <optionresponse>
+    <optioninput label="For fourth row:" options="('Odd','Even','')" correct="Odd"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </optionresponse>
+</problem>
+

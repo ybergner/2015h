@@ -1,0 +1,33 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>
+    <img src="/static/1641.jpg"/>
+  </p>
+  <p>If you were to redraw the diagram using a scale of 3/4 inch = 10 feet, what would be the length, in inches, of the side that is 48 feet? </p>
+  <p>
+    <p style="display:inline">  </p>
+    <numericalresponse inline="1" answer="3.6">
+      <textline inline="1">
+        <responseparam type="tolerance" default="0%"/>
+      </textline>
+		<hintgroup hintfn="hintfn1"/> 
+     </numericalresponse>
+    <p style="display:inline"></p>
+  </p>
+</problem>

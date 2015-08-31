@@ -1,0 +1,29 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>
+    <center>
+      <img src="/static/6123.gif"/>
+    </center>
+  </p>
+  <p>The nine chips shown above are placed in a sack and then mixed up. Mary draws one chip from this sack. What is the probability that Mary draws a chip with an even number?</p>
+  <numericalresponse answer="4/9">
+<formulaequationinput label="023"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </numericalresponse>
+</problem>

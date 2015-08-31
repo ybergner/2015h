@@ -1,0 +1,30 @@
+<problem display_name="Multiple Choice" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>The least common multiple of 8, 12, and a third number is 120. Which of the following  be the third number?</p>
+    <multiplechoiceresponse>
+    <choicegroup label="085">
+      <choice correct="false">15</choice>
+      <choice correct="false">16</choice>
+      <choice correct="true">24</choice>
+      <choice correct="false">32</choice>
+      <choice correct="false">48</choice>
+    </choicegroup>
+		<hintgroup hintfn="hintfn1"/> 
+   </multiplechoiceresponse>
+  </problem>

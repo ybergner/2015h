@@ -1,0 +1,28 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>Yvonne has studied the cost of tickets over time for her favorite sports team. She has created a model to predict the cost of a ticket in the future. Let <i>C</i> represent the cost of a ticket in dollars and <i>y</i> represent the number of years in the future. Her model is as follows:</p>
+  <p>
+    <center><i>C</i> = 2.5<i>y</i> + 13</center>
+  </p>
+  <p>Based on this model, how much will the cost of a ticket <u>increase</u> in two years?</p>
+  <numericalresponse answer="5">
+<formulaequationinput label="087"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </numericalresponse>
+</problem>

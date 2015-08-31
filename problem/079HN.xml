@@ -1,0 +1,24 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>Suppose 4<i>r</i> = 3<i>s</i> = 10<i>t</i>, where <i>r</i>, <i>s</i>, and <i>t</i> are positive integers. What is the sum of the least values of <i>r</i>, <i>s</i>, and <i>t</i> for which this equality is true?</p>
+  <numericalresponse answer="41">
+<formulaequationinput label="079"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </numericalresponse>
+</problem>

@@ -1,0 +1,42 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+
+  <p>A scale drawing of a rectangular room is 5 inches by 3 inches.  If 1 inch on this scale drawing represents 3 feet, what are the dimensions of the room ? </p> <p> Note: Please enter you answers in feet, and enter the largest dimension first. </p>
+  <p>
+    <p style="display:inline"> </p>
+    <numericalresponse inline="1" answer="15">
+      <textline inline="1">
+        <responseparam type="tolerance" default="1"/>
+      </textline>
+		<hintgroup hintfn="hintfn1"/> 
+     </numericalresponse>
+    <p style="display:inline"> </p>
+    <p> </p>
+    <p> BY </p>
+    <p style="display:inline"> </p>
+    <numericalresponse inline="1" answer="9">
+      <textline inline="1">
+        <responseparam type="tolerance" default="1"/>
+      </textline>
+		<hintgroup hintfn="hintfn1"/> 
+     </numericalresponse>
+    <p style="display:inline"> </p>
+  </p>
+</problem>
+

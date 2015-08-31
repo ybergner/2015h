@@ -1,0 +1,16 @@
+<problem display_name="Intro" markdown="null" weight="0.0">
+  <p><b>Important: Please read these instructions all the way through or you may not receive credit for completing the task. </b></p>
+
+<p>This is the collaborative portion of the math test. You are expected to work together with a partner--by typing in the chat box--on the questions in this section. After discussing the solutions, each of you must separately enter and submit your answers on your own screen.  </p>
+
+<p>When you are ready to begin, click the ready to start button below to begin the pairing process. If no partner is found after 5 minutes, the search will stop. You may reload the page and click ready again to wait 5 more minutes. If you have waited at least 5 minutes and do not wish to wait further, you may proceed to answer the questions in this section by yourself. However, if you do not initiate the pairing process and wait at least 5 minutes, you will not get credit for completing the task. Please check the box below to indicate that you have understood these instructions. </p>
+
+  
+  
+  
+  <choiceresponse>
+    <checkboxgroup label="Select the answer that matches" direction="vertical">
+      <choice correct="true">I understand that I am expected to work with a partner on this section and that I may only proceed without a partner if I have initiated the pairing process and waited at least 5 minutes to find a partner online.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

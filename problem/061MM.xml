@@ -1,0 +1,30 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>A cat lies crouched on level ground 50 feet away from the base of a tree. The cat can see a bird's nest directly above the base of the tree. The angle of elevation from the cat to the bird's nest is 40°. To the nearest foot, how far above the base of the tree is the bird's nest?</p>
+  <p>
+    <p style="display:inline">  </p>
+    <numericalresponse inline="1" answer="42">
+      <textline inline="1">
+        <responseparam type="tolerance" default="0%"/>
+      </textline>
+		<hintgroup hintfn="hintfn1"/> 
+     </numericalresponse>
+    <p style="display:inline"></p>
+  </p>
+</problem>

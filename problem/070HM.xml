@@ -1,0 +1,31 @@
+<problem display_name="Multiple Choice" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>A certain company keeps a list of 50 employees and their annual salaries. When the salary of the very highly paid president is added to this list, which of the following measure of central tendency is most likely to be approximately the same or nearly the same for the original list and the new list?</p>
+  <multiplechoiceresponse>
+    <choicegroup label="070" type="MultipleChoice">
+      <choice correct="false">The highest salary</choice>
+      <choice correct="false">The range</choice>
+      <choice correct="false">The mean</choice>
+      <choice correct="true">The median</choice>
+      <choice correct="false">The standard deviation</choice>
+    </choicegroup>
+		<hintgroup hintfn="hintfn1"/> 
+   </multiplechoiceresponse>
+  <p>     </p>
+</problem>

@@ -1,0 +1,35 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>The following chart indicates the maximum number of connecting line segments, <i>y</i>, that can be drawn connecting <i>x</i> points, where no three points lie on the same line. </p>
+  <p>
+    <img src="/static/1181.png"/>
+  </p>
+  <p>(a)</p>
+  <p>The relationship between <i>y</i> and <i>x</i> is represented by the equation <i>y</i> = <i>kx</i>(<i>x-1</i>) for any positive number of points <i>x</i>. Use the information in the table to determine the value of the real number <i>k</i>. </p>
+  <numericalresponse answer="1/2">
+<formulaequationinput label="081.1"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </numericalresponse>
+  <p>(b)</p>
+  <p>Use the equation from part (a) to determine the maximum number of line segments that can be drawn connecting 100 points, no three of which lie on the same line.</p>
+  <numericalresponse answer="4950">
+<formulaequationinput label="081.2"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </numericalresponse>
+</problem>

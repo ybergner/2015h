@@ -1,0 +1,30 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>
+    <center>
+      <img src="/static/5996.gif"/>
+    </center>
+  </p>
+  <p>The pulse rate for a group of 100 people is shown in the graph above. What is the average pulse rate per minute for these 100 people? 
+<p>(<u>Note</u>: Use the midpoint of each interval to represent the pulse rate for the entire interval. For example, 55 would be used for the pulse rate of the 15 people in the 50-60 group.)</p></p>
+  <numericalresponse answer="71">
+<formulaequationinput label="096"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </numericalresponse>
+</problem>

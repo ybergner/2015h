@@ -1,0 +1,26 @@
+<problem display_name="Numerical Response" markdown="null" weight="0.0">
+<script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>The cost to mail a first-class letter is 33 cents for the first ounce. Each additional ounce costs 22 cents. (Fractions of an ounce are rounded up to the next whole ounce.)</p>
+  <p>What is a possible weight, in ounces, for a first-class letter that costs $1.21 to mail? </p>
+  <numericalresponse answer="4.5">
+    <responseparam type="tolerance" default=".5"/>
+<formulaequationinput label="038"/>
+		<hintgroup hintfn="hintfn1"/> 
+   </numericalresponse>
+</problem>
