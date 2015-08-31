@@ -1,0 +1,15 @@
+<problem display_name="Intro" markdown="null" weight="0.0">
+  <p><b>Important: Please read these instructions all the way through or you may not receive credit for completing the task. </b></p>
+
+<p>This is the individual portion of the math test. All we ask is that you make your best effort to respond to these 
+math questions. You may use the calculator if you wish.   </p>
+
+<p>If you do not know the answer, it is okay to guess. If you leave too many answers blank, you may not receive full credit for completing the task.</p>
+
+  
+  <choiceresponse>
+    <checkboxgroup label="Select the answer that matches" direction="vertical">
+      <choice correct="true">I understand that I am expected to attempt all of the questions.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>
