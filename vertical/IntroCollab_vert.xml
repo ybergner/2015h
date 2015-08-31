@@ -1,4 +1,4 @@
 <vertical display_name="Math">
-<conditional url_name="IntroCollab_cond"/>
+<problem url_name="IntroCollab"/>
 <cpsx url_name="cpsxurl" xblock-family="xblock.v1" form_text="2015h" wait_time="5" group_size="2"/>
 </vertical>
