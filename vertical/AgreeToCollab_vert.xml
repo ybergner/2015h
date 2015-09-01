@@ -1,0 +1,4 @@
+<vertical display_name="End">
+<problem url_name="AgreeToCollab"/>
+<cpsx url_name="cpsxurl" xblock-family="xblock.v1" form_text="2015h" wait_time="5" group_size="2"/>
+</vertical>

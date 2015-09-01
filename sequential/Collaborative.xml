@@ -1,5 +1,5 @@
-<sequential display_name=" Collaborative Form"> 
-    <vertical url_name="IntroCollab_vert"/>
+<sequential display_name="Collaborative Part"> 
+    <vertical url_name="AgreeToCollab_vert"/>
     <vertical url_name="003EM_vert"/>
     <vertical url_name="038MN_vert"/>
     <vertical url_name="028ED_vert"/>
