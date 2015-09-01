@@ -5,7 +5,7 @@
         ], 
         "discussion_topics": {
             "General": {
-                "id": "i4x-CollabAssess-CA101-2015h"
+                "id": "i4x-CollabAssess-CA101-2015h-2015h"
             }
         }, 
         "display_name": "Collaborative Math", 
@@ -16,7 +16,7 @@
         "no_grade": true, 
         "show_calculator": true, 
         "showanswer": "never", 
-        "course_image": "1641.jpg",
+        "course_image": "Collabs.jpg",
         "start": "2010-01-01T00:00:00Z", 
         "tabs": [
             {
@@ -30,6 +30,7 @@
         ], 
         "xml_attributes": {
             "filename": [
+                "course/2015h.xml",
                 "course/2015h.xml"
             ]
         }
