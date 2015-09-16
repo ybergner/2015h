@@ -1,15 +1,33 @@
-<problem display_name="Intro" markdown="null" weight="0.0">
+<problem display_name="Individual Intro" markdown="null" weight="0.0">
   <p><b>Important: Please read these instructions all the way through or you may not receive credit for completing the task. </b></p>
 
-<p>This is the individual portion of the math test. All we ask is that you make your best effort to respond to these 
-math questions. You may use the calculator if you wish.   </p>
+<p>
+This is the individual portion of the math test. 
+Please complete this part first before moving on the the collaborative part.
+We ask that you make your best effort to respond to all of the questions. 
+If you do not know the answer, it is okay to guess. 
+</p>
 
-<p>If you do not know the answer, it is okay to guess. If you leave too many answers blank, you may not receive full credit for completing the task.</p>
+<p>
+To answer the questions, you can use the calculator widget that appears at the bottom of the test or your own calculator. 
+You may also want to use paper and a pencil.
+The test questions require numerical responses. 
+Fractions can be written using "/" (as in "1/4"), but no letters are permitted. 
+</p>
+
+<p>
+  Once you have entered your answer in the answer field, 
+  <strong> you must press the "check" button </strong> before navigating to the next question. 
+  If you do not press this button, your answers will not be submitted, 
+  and you may not receive full credit for completing the task. 
+  Please check the box below to indicate that you have understood these instructions.
+</p>
 
   
   <choiceresponse>
     <checkboxgroup label="Select the answer that matches" direction="vertical">
-      <choice correct="true">I understand that I am expected to attempt all of the questions.</choice>
+      <choice correct="true">I understand that I am expected to attempt and submit ("check") all of the questions on this part before 
+      moving on to the collaborative test.</choice>
     </checkboxgroup>
   </choiceresponse>
 </problem>

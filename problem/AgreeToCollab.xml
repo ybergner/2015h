@@ -1,16 +1,32 @@
-<problem display_name="Intro" markdown="null" weight="0.0">
+<problem display_name="Collaborative Intro" markdown="null" weight="0.0">
   <p><b>Important: Please read these instructions all the way through or you may not receive credit for completing the task. </b></p>
 
-<p>This is the collaborative portion of the math test. You are expected to work together with a partner--by typing in the chat box--on the questions in this section. After discussing the solutions, each of you must separately enter and submit your answers on your own screen.  </p>
+<p>This is the collaborative part of the math test. 
+You are expected to work together with a partner--by communicating through a chat box--on the questions in this section. 
+After discussing the solutions, each of you must separately enter and submit your answers on your own screen.  
+<b> You will be paid for the task only if both you and your partner provide the same responses in this section. </b>
+</p>
 
-<p>When you are ready to begin, click the ready to start button below to begin the pairing process. If no partner is found after 5 minutes, the search will stop. You may reload the page and click ready again to wait 5 more minutes. If you have waited at least 5 minutes and do not wish to wait further, you may proceed to answer the questions in this section by yourself. However, if you do not initiate the pairing process and wait at least 5 minutes, you will not get credit for completing the task. Please check the box below to indicate that you have understood these instructions. </p>
+<p>Once you have been paired up with a partner, please do not leave the task or log out of the chat.
+There are only two of you in any session, and your place will not be filled by anyone else.
+If you lose your network connection and return to the login screen, you will be able to rejoin the conversation.
+<strong> However, if you log out of the chat, you will not be able to return to it. </strong>
+Therefore, you should only log out after you have completed this entire portion.</p>
 
-  
+<p>When you are ready to begin, click the button below to initiate the pairing process. 
+If no partner is found after 5 minutes, the search will stop. 
+You may reload the page and try waiting some more. If you have waited at least 5 minutes 
+and do not wish to wait further, you may proceed to answer the questions in this section by yourself. 
+However, if you do not initiate the pairing process and wait at least 5 minutes, 
+you will not get credit for completing the task. 
+Please check the box below to indicate that you have understood these instructions. </p>
   
   
   <choiceresponse>
     <checkboxgroup label="Select the answer that matches" direction="vertical">
-      <choice correct="true">I understand that I am expected to work with a partner on this section and that I may only proceed without a partner if I have initiated the pairing process and waited at least 5 minutes to find a partner online.</choice>
+      <choice correct="true">I understand that I am expected to work with a partner on this section 
+      and that I may only proceed without a partner if I have initiated the pairing process and waited 
+      at least 5 minutes to find a partner online.</choice>
     </checkboxgroup>
   </choiceresponse>
 </problem>
